@@ -11,3 +11,7 @@ for i in range(1,100+1):
 for i in range(1,100+1):
     if i%2!=0:
         print(i)
+
+#54.print numbers down from 10 to 1
+for i in range(10,1-1,-1):
+	print(i)
