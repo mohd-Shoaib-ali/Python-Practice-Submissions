@@ -6,3 +6,8 @@ for i in range(0,10):
 for i in range(1,100+1):
     if i%2==0:
         print(i)
+
+#53.print all odd numbers from 1 and 100
+for i in range(1,100+1):
+    if i%2!=0:
+        print(i)
