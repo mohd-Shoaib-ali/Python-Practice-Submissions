@@ -15,3 +15,9 @@ for i in range(1,100+1):
 #54.print numbers down from 10 to 1
 for i in range(10,1-1,-1):
 	print(i)
+
+
+#55.print the table of given number
+n=int(input("Enter a Number: "))
+for i in range(1,10+1):
+    print(f"{n} * {i}  = {n*i}")
