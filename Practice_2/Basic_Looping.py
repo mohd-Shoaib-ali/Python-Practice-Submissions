@@ -21,3 +21,8 @@ for i in range(10,1-1,-1):
 n=int(input("Enter a Number: "))
 for i in range(1,10+1):
     print(f"{n} * {i}  = {n*i}")
+
+#56.print the sum of first n natural numbers
+n=int(input("Enter a Number: "))
+print(int(n*((n+1)/2)))
+
