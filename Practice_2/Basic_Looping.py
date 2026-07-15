@@ -34,3 +34,25 @@ for i in range(1,n+1):
         sum+=i
 print(sum)
 
+#58.print the sum of all odd numbers upto n.
+n=int(input("Enter a Number: "))
+sum=0
+for i in range(1,n+1):
+    if i%2!=0:
+        sum+=i
+print(sum)
+
+#59.print factorial of given number
+n=int(input("Enter a Number: "))
+def fact(n):
+    if n==0 or n==1:
+        return 1
+    else:
+        return n*fact(n-1)
+print(fact(n))
+#=================================
+n=int(input("Enter a Number: "))
+fact=1
+for i in range(1,n+1):
+    fact*=i
+print(fact)
