@@ -26,3 +26,11 @@ for i in range(1,10+1):
 n=int(input("Enter a Number: "))
 print(int(n*((n+1)/2)))
 
+#57.print the sum of all even numbers upto n.
+n=int(input("Enter a Number: "))
+sum=0
+for i in range(1,n+1):
+    if i%2==0:
+        sum+=i
+print(sum)
+
