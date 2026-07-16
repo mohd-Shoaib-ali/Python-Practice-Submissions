@@ -49,3 +49,15 @@ while num>0:
     num//=10
 print(sum)
 
+#65.Check if the number is Armstrong
+num=int(input("Enter a Number: "))
+temp=num
+sum=0
+length=int(len(str(num)))
+while num>0:
+    dig=num%10
+    sum+=dig**length
+    num//=10
+print("Armstrong" if temp==sum else "Not Armstrong")
+
+
