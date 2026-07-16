@@ -39,3 +39,13 @@ rev=int(str(num)[::-1])
 
 print("P" if num==rev else "NP")
 
+#64.find the sum of digits of a number
+
+num=int(input("Enter a Number: "))
+sum=0
+while num>0:
+    dig=num%10
+    sum+=dig
+    num//=10
+print(sum)
+
