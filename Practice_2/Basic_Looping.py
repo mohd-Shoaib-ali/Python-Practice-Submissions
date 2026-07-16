@@ -56,3 +56,13 @@ fact=1
 for i in range(1,n+1):
     fact*=i
 print(fact)
+
+#60.print the product of digits of given number
+num=int(input("Enter a Number: "))
+product=1
+while num>0:
+    dig=num%10
+    product*=dig
+    num//=10
+print(product)
+
