@@ -1,0 +1,24 @@
+#61.count the number of digits in a given number
+
+num=int(input("Enter a Number: "))
+count=0
+while num>0:
+    dig=num%10
+    count+=1
+    num//=10
+print(count)
+#=================================
+num=int(input("Enter a Number: "))
+print(int(len(str(num))))
+
+#62.print reverse of a given number
+num=int(input("Enter a Number: "))
+print(str(num)[::-1])
+#=================================
+num=int(input("Enter a Number: "))
+rev=0
+while num>0:
+    dig=num%10
+    rev=rev*10+dig
+    num//=10
+print(rev)
