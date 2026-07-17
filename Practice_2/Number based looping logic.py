@@ -102,3 +102,17 @@ def print_fibonacci(n):
         print(a,end=" ")
         a,b=b,a+b
 print_fibonacci(n)
+
+#70.Print sum of first n terms of Fibonacci series.
+n = int(input("Enter how many Fibonacci terms to generate: "))
+term = int(input("Enter how many terms to sum: "))
+
+lst = []
+a, b = 0, 1
+
+for _ in range(n):
+    lst.append(a)
+    a, b = b, a + b
+
+print(lst)
+print("Sum =", sum(lst[:term]))
