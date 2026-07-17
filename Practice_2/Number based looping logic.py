@@ -81,3 +81,24 @@ for n in range(2,num+1):
             break
     else:
         print(n,end=" ")
+
+
+#68.Check is a number  prime or not
+
+num =int(input())
+for i in range(2,int(num**0.5)+1):
+    if num%i==0:
+        print("Not Prime")
+        break
+    else:
+        print("Prime")
+
+
+#69.Print Fibonacci series up to n terms.
+n=int(input())
+def print_fibonacci(n):
+    a,b=0,1
+    for _ in range(n):
+        print(a,end=" ")
+        a,b=b,a+b
+print_fibonacci(n)
