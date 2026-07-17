@@ -61,3 +61,13 @@ while num>0:
 print("Armstrong" if temp==sum else "Not Armstrong")
 
 
+#66.check if a number is perfect number
+num=int(input("Enter a Number: "))
+summ=0
+for i in range(1,num):
+    if num%i==0:
+        summ+=i
+if summ==num:
+    print("Perfect number")
+else:
+    print("Not a Perfect Number")
