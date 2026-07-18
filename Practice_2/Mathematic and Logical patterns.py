@@ -24,3 +24,11 @@ def hcf_loop(a, b):
         if a % i == 0 and b % i == 0:
             return i
 
+# example
+#print(hcf_loop(54, 24))  # prints 6
+#====================================
+def hcf_euclid(a, b):
+    a, b = abs(a), abs(b)
+    while b:
+        a, b = b, a % b
+    return a
