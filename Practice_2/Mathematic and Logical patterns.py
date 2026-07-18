@@ -37,3 +37,24 @@ def hcf_euclid(a, b):
 #=====================================
 import math
 math.gcd(54, 24)  # returns 6
+#75.Find LCM of two numbers using loops.
+def lcm_loop(a, b):
+    a, b = abs(a), abs(b)
+    bigger = max(a, b)
+
+    while True:
+        if bigger % a == 0 and bigger % b == 0:
+            return bigger
+        bigger += 1
+
+print(lcm_loop(4, 6))   # 12
+print(lcm_loop(54,24)) #216
+
+a=int(input("a: "))
+b=int(input("b: "))
+bigger=max(a,b)
+while True:
+    if bigger%a==0 and bigger%b==0:
+        print(bigger)
+        break
+    bigger+=1
