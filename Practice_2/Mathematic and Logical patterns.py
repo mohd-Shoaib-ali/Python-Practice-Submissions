@@ -32,3 +32,8 @@ def hcf_euclid(a, b):
     while b:
         a, b = b, a % b
     return a
+# example
+#print(hcf_euclid(54, 24))  # prints 6
+#=====================================
+import math
+math.gcd(54, 24)  # returns 6
