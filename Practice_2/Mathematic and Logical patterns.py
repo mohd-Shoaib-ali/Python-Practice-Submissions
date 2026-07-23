@@ -95,5 +95,14 @@ if sum_fact == num:
 else:
     print(num, "is not a Strong Number")
 
+#79.Print first n terms of an arithmetic progression (a, d).
+a = int(input("Enter first term (a): "))
+d = int(input("Enter common difference (d): "))
+n = int(input("Enter number of terms (n): "))
+
+print("Arithmetic Progression:")
+
+for i in range(n):
+    print(a + i * d, end=" ")
 
 
