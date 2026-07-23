@@ -74,3 +74,26 @@ for i in range(1,n+1):
         summ+=i
 print(summ)
 
+#78.Check if a number is a strong number (sum of factorials of digits = number).
+num = int(input("Enter a number: "))
+temp = num
+sum_fact = 0
+
+while temp > 0:
+    digit = temp % 10
+
+    # Find factorial of the digit
+    fact = 1
+    for i in range(1, digit + 1):
+        fact *= i
+
+    sum_fact += fact
+    temp //= 10
+
+if sum_fact == num:
+    print(num, "is a Strong Number")
+else:
+    print(num, "is not a Strong Number")
+
+
+
