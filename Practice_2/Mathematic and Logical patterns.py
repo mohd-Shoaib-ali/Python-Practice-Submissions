@@ -105,4 +105,15 @@ print("Arithmetic Progression:")
 for i in range(n):
     print(a + i * d, end=" ")
 
+#80.Print first n terms of a geometric progression (a, r).
+a = int(input("Enter first term (a): "))
+r = int(input("Enter common ratio (r): "))
+n = int(input("Enter number of terms (n): "))
 
+term = a
+
+print("Geometric Progression:")
+
+for i in range(n):
+    print(term, end=" ")
+    term *= r
