@@ -1,41 +1,52 @@
-#1. Print a Single Star (*)
+#91. Print a Single Star (*)
 print("*")
 
-#2. Print Four Stars (****)
+#92. Print Four Stars (****)
 print("***")
 
-#3. Print n Stars on Same Line
+#93. Print n Stars on Same Line
 n=5
 for i in range(n+1):
     print("*")
 
-#4Print Square of Stars (n x n Stars)
+#94Print Square of Stars (n x n Stars)
 n=5
 for i in range(n):
     for j in range(n):
         print("*",end="")
     print()
 
-#5. Print an Increasing Triangle of Stars
+#95. Print an Increasing Triangle of Stars
 n=5
 for i in range(1,n+1):
     print("*"*i)
 
-#6. Print a Right-Aligned Triangle of Stars    
+#96. Print a Right-Aligned Triangle of Stars    
 n=5
 for i in range(n-1,-1,-1):
     print(" "*i,"*"*(n-i))
 
 
-#7. Print Stars in Even Numbers (2, 4, 6, 8, 10)
+#97. Print Stars in Even Numbers (2, 4, 6, 8, 10)
 n=10
 for i in range(1,n+1):
     if i%2==0:
         print("*"*i)
 
 
-#8. Print Stars in Odd Numbers (1, 3, 5, 7, 9)
+#98. Print Stars in Odd Numbers (1, 3, 5, 7, 9)
 n=10
 for i in range(1,n+1):
     if i%2!=0:
         print("*"*i)
+
+#99.Print a Centered Pyramid of Stars
+n=5
+
+for i in range(n):
+    for j in range(n-i-1):
+        print(" ",end=" ")
+    for j in range(2*i+1):
+        print("*",end=" ")
+    print()    
+
