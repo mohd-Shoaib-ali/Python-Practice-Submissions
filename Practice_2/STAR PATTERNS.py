@@ -50,3 +50,9 @@ for i in range(n):
         print("*",end=" ")
     print()    
 
+#100. Print Numbers in an Increasing Sequence (1, 12, 123, 1234, 12345)
+
+for i in range(1,7):
+    for j in range(1,i+1):
+        print(j,end=" ")
+    print()
